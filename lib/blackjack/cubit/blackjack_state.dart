@@ -9,8 +9,8 @@ abstract class BlackjackState extends Equatable {
 
 class InitialBlackjackState extends BlackjackState {}
 
-class SetHandsBlackjackState extends BlackjackState {
-  final Card? dealerCard;
-  final List<Card> player;
-  const SetHandsBlackjackState(this.dealerCard, this.player);
-}
+class SetDealerHandBlackjackState extends BlackjackState {}
+
+class SetPlayerHandBlackjackState extends BlackjackState {}
+
+class AddCardToPlayerHandBlackjackState extends BlackjackState {}
